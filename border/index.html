@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            width: 100vh;
+            border: 2px solid violet;
+            border-bottom: 10px solid red;
+            border-top: 10px solid green;
+            border-right: 10px dotted orangered;
+            border-left: 10px double blue;
+            margin: 25%;
+            border-radius: 10%;
+            animation: flash 1.5s linear infinite;
+            animation: bounce 1.5s linear infinite;
+            position: static;
+        }
+        section{
+            width: 100vh;
+            height: 200px;    
+        }
+        @keyframes flash {
+            0%{
+                transform: scale(1.5);
+            }
+            50%{
+                transform: scale(1);
+            }
+            100%{
+                transform: scale(.5);
+            }
+        }
+        @keyframes bounce {
+            0%{
+                transform: translateY(0px);
+                /* transform: rotate(-180deg); */
+            }
+            50%{
+                transform: translateY(-100px);
+                /* transform: rotate(180deg); */
+                
+            }
+            100%{
+                transform: translateY(0px);
+                /* transform: rotate(180deg); */
+            }
+        }
+        ul{
+            color: red;
+            font-size: 2em;
+        }
+        span{
+            width: 100px;
+            height: 60px;
+            display: block;
+            background-color: blue;
+        }
+        div{
+            width: 200px;
+            height: 100px;
+            background-color: red;
+            color: aliceblue;
+            display: inline-block;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <section>
+            <h1>This is our Border</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti aliquam nostrum ut doloribus a, aliquid in
+                nam asperiores recusandae. Eos ratione assumenda incidunt totam omnis excepturi officiis soluta eius
+                repellat.</p>
+        </section>
+    </div>
+   <article>
+    how r u
+    <ul>
+        <li>hi</li>
+        <li>hmm
+            <ul>
+                <li>hello</li>
+            </ul>
+            <li>
+                <ul>
+                    <li>
+                        sunny
+                    </li>
+                </ul>
+            </li>
+        </li>
+    </ul>
+   </article>
+   <span>hi </span>
+   <span>sunny</span>
+   <div>hii</div>
+   <div>sunny</div>
+</body>
+
+</html>

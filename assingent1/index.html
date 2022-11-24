@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        section{
+            width: 100%;
+            height: 1300px;
+            /* box-shadow: 10px 10px 5px 10px rgb(246, 4, 4); */
+            /* display: flex;
+            justify-content: center; */
+        }
+        h1{
+            font-size: 50px;
+            line-height: 70px;
+            text-align: center;
+            color: rgb(4, 75, 75);
+            text-shadow: 2px 3px rgb(239, 126, 126);
+        }
+        #first,#second{
+            width: 1000px;
+            height:500px;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            box-shadow: 3px 3px 3px 3px rgb(193, 127, 177);
+            margin-bottom: 100px;
+            margin-left: 250px;
+        }
+        .first1,.second1{
+            width: 300px;
+            height: 400px;
+            box-shadow: 1px 1px 1px 2px rgb(43, 157, 238);
+            border-radius: 10px;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            gap: 20px;
+            align-items: center;
+            margin-top:10px ;
+            background-color: rgb(238, 238, 219);
+        }
+        .first1:hover,.second1:hover{
+            box-shadow: 5px 5px rgb(108, 2, 25);
+        }
+        button{
+            width: 90px;
+            height: 40px;
+            border-radius: 10px;
+            box-shadow: 1px 1px black;
+            font-size: 20px;
+            font-weight: bolder;
+            color: rgb(1, 32, 39);
+            /* box-shadow: 1px 1px 1px 2px rgb(43, 157, 238); */
+            
+
+        }
+        button:hover{
+            background-color: black;
+            color: aliceblue;
+
+        }
+        img{
+            width: 250px;
+            height: 200px;
+            border-radius: 10px;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: 100%;
+            /* object-fit: scale-down; */
+            box-shadow: 1px 1px 1px 2px white
+
+        }
+        p{
+            font-size: 18px;
+            font-weight: bolder;
+        }
+
+    </style>
+</head>
+<body>
+    <section>
+        <h1>SHOES MALL</h1>
+        <div id="first">
+            <div class="first1" id="f1">
+                <div class="img"><img src="./image/s9.webp" alt=""></div>
+                <p>Price Rs.12000</p>
+                <button>order</button>
+            </div>
+            <div class="first1" id="f2">
+                <div class="img"><img src="./image/s8.jpg" alt=""></div>
+                <p>Price Rs.15000</p>
+                <button>order</button>
+            </div>
+            <div class="first1" id="f3">
+                <div class="img"><img src="./image/s3.jpg" alt=""></div>
+                <p>Price Rs.10000</p>
+                <button>order</button>
+            </div>
+        </div>
+        <div id="second">
+            <div class="second1" id="s1">
+                <div class="img"><img src="./image/s4.jpg" alt=""></div>
+                <p>Price Rs.16000</p>
+                <button>order</button>
+            </div>
+            <div class="second1" id="s2">
+                <div class="img"><img src="./image/s6.jpg" alt=""></div>
+                <p>Price Rs.11000</p>
+                <button>order</button>
+            </div>
+            <div class="second1" id="s3">
+                <div class="img"><img src="./image/s7.jpg" alt=""></div>
+                <p>Price Rs.12000</p>
+                <button>order</button>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

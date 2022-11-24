@@ -12,34 +12,62 @@
             font-size: 200px;
             text-shadow: 10px 2px rgb(248, 202, 202);
         }
-        div{
-            width: 200px;
-            height: 100px;
-            border: 2px solid gray;
-        }
-        div:nth-child(1){
-            background-color: red;
-            transition: cubic-bezier(0.075, 0.82, 0.165, 1);
-        }
-        div:nth-child(2){
-            background-color: rgb(204, 0, 255);
-            transition: cubic-bezier(0.075, 0.82, 0.165, 1);
-        }
-        div:nth-child(3){
-            background-color: rgb(0, 149, 255);
-            transition: cubic-bezier(0.075, 0.82, 0.165, 1);
-        }
-        div:nth-child(4){
-            background-color: rgb(118, 71, 71);
-            transition: cubic-bezier(0.075, 0.82, 0.165, 1);
-        }
+        #box
+{
+    height: 400px;
+    width: 400px;
+    border: 1px solid black;
+    background-color:darkorchid;
+    transition-property: all;
+    transition-duration: 2s;
+    transition-timing-function: ease-in;
+    transition-delay: 2s;
+}
+
+#box:hover{
+    border-radius: 50%;
+    background-color:chocolate;
+}
+.container{
+    width: 100vw;
+    height: 100vh;
+}
+.boxx{
+    width: 250PX;
+    height: 250px;
+    display: flex;
+    border: 1px solid black;
+    justify-content: center;
+    align-items: center;
+    transition: 2s;
+    font-size: 20px;
+    text-shadow: 1px 1px 2px red, 0 0 1em blue, 0 0 0.2em blue;
+    transform: translate(200px);
+}
+.boxx:hover{
+    width:600px;
+}
+.one{
+    background-color:rgb(253, 139, 8);
+    transition-timing-function: linear;
+}
+.two{
+    background-color:rgb(250, 249, 251);
+    transition-timing-function: ease-in;
+}
+.three{
+    background-color:rgb(9, 162, 19);
+}
     </style>
 </head>
 <body>
     <h1>Transition</h1>
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
+    <div id="box"></div>
+    <div class="container">
+        <div class="boxx one">linear</div>
+        <div class="boxx two">ease-in</div>
+        <div class="boxx three">ease-out</div>
+        <div class="boxx four">cubic-beizer</div>
+    </div>
 </body>
 </html>

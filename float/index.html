@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>float</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        .container {
+            width: 1000px;
+            /* height: 1000px; */
+            border: 2px solid black;
+            margin-left: 300px;
+        }
+
+        #box1 {
+            border: 2px solid brown;
+            margin: 10px;
+            float: left;
+            width: 48%;
+            
+        }
+        #box2 {
+            border: 2px solid brown;
+            margin: 10px;
+            float: right;
+            width: 48%;
+            
+
+        }
+        #box3 {
+            border: 2px solid brown;
+            margin: 10px;
+            clear: left;
+            clear: right;
+            /* clear: both; */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <p id="box1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam dolorem esse id, placeat illo
+            velit ipsum dignissimos suscipit exercitationem aperiam eligendi est tenetur impedit veritatis inventore
+            reiciendis autem nam! Tempora?</p>
+        <p id="box2">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Excepturi dolorum cumque magni eaque
+            blanditiis inventore delectus iusto obcaecati magnam. Officia necessitatibus impedit itaque non veniam!
+            Fugiat impedit aspernatur laudantium illo?</p>
+        <p id="box3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima maiores facere harum recusandae
+            eum itaque aliquam modi sequi, natus vel voluptas eos at sunt earum cum, iste aut nihil ipsum.</p>
+    </div>
+
+</body>
+
+</html>

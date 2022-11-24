@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex</title>
+    <style>
+        .box {
+            width: 1000px;
+            height: 100px;
+            display: flex;
+            /* flex-wrap: wrap; */
+            /* justify-content: space-evenly; */
+            /* justify-content: space-around; */
+            /* align-content: flex-start ; */
+            /* align-content: space-between; */
+            /* gap: 30px; */
+            border: 2px solid black;
+        }
+        .sbox{
+            width: 200px;
+            height: 30px;
+            border: 2px solid brown;
+
+    
+        }
+        #one{
+            /* flex-grow: 1; */
+            flex-shrink: 2;
+        }
+        #three{
+            /* flex-grow: 1; */
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div class="sbox" id="one">One</div>
+        <div class="sbox" id="two">Two</div>
+        <div class="sbox" id="three">Three</div>
+      </div>
+    
+    
+</body>
+</html>
